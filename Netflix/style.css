@@ -1,0 +1,218 @@
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    
+  }
+   
+  /* background-image */
+  header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.4)),
+    url(./assets/netimg1.jpg) ;
+    background-size: cover;
+    background-position: 50%;
+    height: 90vh;
+  }
+  /* navbar */
+  nav img{
+    width: 15%;
+  }
+
+  #language{
+    border: 0;
+    border-radius: 0.25rem;
+    padding: 5px,17px;
+  }
+
+  .red-btn{
+    background: rgb(229, 9, 20);
+    color: #fff;
+    border: 0;
+    border-radius: 0.25rem;
+    padding: 5px,17px;
+
+  }
+  .red-btn:hover{
+    background: rgb(193,17, 25);
+  }
+
+  /* hero section */
+  .hero-title{
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .hero-para-first{
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .hero-para-sec{
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.87rem;
+  }
+  form {
+    width: 60%;
+  }
+  form #floatinginput{
+    color: #fff;
+  }
+  form .form-control:focus{
+    border-color: #fff;
+    box-shadow: none;
+    border-width: medium;
+  }
+  form .form-floating>.form-control:focus~label{
+    color: rgba(255,255,255, 0.7);
+  }
+  form .form-floating>.form-control:focus~label::after{
+    background-color: transparent;
+  }
+ form .form-floating{
+  width: 50% ;
+
+ }
+ form #floatinginput{
+  background: transparent;
+ }
+
+ form label{
+  color: rgba(255,255,255, 0.7);
+  margin-left: 10px;
+ }
+ .get-started-btn{
+  height: 60px;
+  font-size: 1.5rem;
+  padding-left: 25px;
+  padding-right: 25px;
+ }
+.get-started-btn::after{
+  content: "\276f";
+  margin-left: 5px;
+}
+ 
+ 
+/* enjoy section */
+.section-title{
+  font-size: 3rem;
+  font-weight: 900;
+}
+.section-paragraph{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.child-section,
+.download-section{
+  border-top:5px solid #232323 ;
+  border-bottom: 5px solid #232323;
+}
+/* faq-section */
+.faq-section h3{
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.876rem;
+}
+.faq-section button{
+  color: #fff;
+  font-size: 24px;
+  font-weight:400 ;
+}
+.faq-section .accordion{
+  --bs-accordian-color:rgb(255, 255, 255);
+  --bs-accordion-bg:rgb(45, 45, 45);
+  --bs-accordion-border-color:none;
+  --bs-accordion-border-radius: none;
+}
+.faq-section .accordion-item:first-of-type .accordion-button{
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.faq-section .accordion-button:focus{
+  border: none;
+  box-shadow: none;
+}
+.faq-section .accordion-button:hover{
+  background-color: rgb(65, 65, 65);
+}
+.faq-section .accordion-button:not(.collapsed){
+  background-color: rgb(65, 65, 65);
+  color: rgb(255, 255, 255);
+}
+.faq-section .accordion-button::after{
+  content: "+";
+  background-image: none;
+  position: absolute;
+  height:30px;
+  font-size: 50px ;
+  top: 5px;
+  right: 45px;
+}
+.faq-section .accordion-button:not(.collapsed)::after{
+  background-image: none;
+  transform: none;
+  content: "\00d7";
+}
+.faq-section .accordion-body{
+  color: rgb(255, 255, 255);
+  font-size: 1.20rem;
+  font-weight: 400;
+  line-height: 1.876rem;
+}
+footer{
+  border-top:5px solid #232323 ;
+}
+footer p,
+footer a{
+  color: rgba(255,255, 255, 0.7);
+  font-size: 0.950rem;
+  font-weight: 600;
+}
+footer ul{
+  padding-left: 0;
+}
+footer li{
+  list-style-type: none;
+}
+ .para{
+  font-size:0.99rem;
+  font-weight: 900;
+}
+
+@media only screen and (max-width:992px){
+  nav img{
+    width: 17%;
+  }
+  .hero-title,
+  .section-title{
+    font-size: 2rem;
+    font-weight: 700;
+
+  }
+  .hero-para-first,
+  .hero-para-sec,
+  .section-paragraph,
+  .faq-section h3{
+    font-size: 1.12rem;
+   
+  }
+   
+}
+@media only screen and (max-width:760px){
+  nav img {
+    width: 25%;
+    }
+    header{
+      height: 100vh;
+    }
+}
+@media only screen and (max-width:576px){
+  nav img{
+    width:35%;
+
+  }
+  header{
+    height: 110vh;
+  }
+  form .form-floating{
+    width: 90%;
+  }
+}
